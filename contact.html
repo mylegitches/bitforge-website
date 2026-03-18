@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Bitforge</title>
+  <meta name="description" content="Talk with Bitforge about agentic AI for energy trading, market risk, credit risk, and workflow automation." />
+  <link rel="icon" type="image/png" href="assets/bitforgelogo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Bitforge home">
+        <img src="assets/bitforgelogo.png" alt="Bitforge logo" />
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold nav-cta">Book a Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Home</a>
+      <a href="platform.html">Platform</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-gold">Book a Demo</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero hero-sm">
+    <div class="container">
+      <div class="hero-eyebrow">Get in touch</div>
+      <h1>Talk with <span class="accent">Bitforge</span></h1>
+      <p class="hero-sub">
+        Tell us about your priorities in energy trading, market risk, credit risk, or workflow automation, and we'll show you where Bitforge can fit.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <span class="section-label" style="color: var(--gold);">Start the conversation</span>
+          <h3>We work with energy trading organizations looking for practical ways to apply agentic AI to complex workflows.</h3>
+          <p>Whether you are evaluating a first use case or planning a broader platform rollout, we can help map the right starting point.</p>
+
+          <h4 style="color: var(--white); margin: 32px 0 16px; font-size: 1rem; font-weight: 700;">What to expect</h4>
+          <div class="expect-list">
+            <div class="expect-item">
+              <div class="expect-num">1</div>
+              <p>We'll schedule an introductory conversation to understand your objectives, current workflows, and where agentic AI can deliver value fastest.</p>
+            </div>
+            <div class="expect-item">
+              <div class="expect-num">2</div>
+              <p>We'll walk through the platform and discuss a focused pilot or statement of work.</p>
+            </div>
+            <div class="expect-item">
+              <div class="expect-num">3</div>
+              <p>We'll outline a path to broader deployment as trust and results grow.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="form-card">
+          <h3>Start the conversation</h3>
+
+          <!--
+            FORMSPREE SETUP:
+            1. Go to https://formspree.io and create a free account
+            2. Create a new form and copy your form endpoint (looks like https://formspree.io/f/XXXXXXXX)
+            3. Replace "YOUR_FORMSPREE_ENDPOINT" below with your actual endpoint
+          -->
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT"
+            method="POST"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name <span style="color:var(--red)">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Jane Smith"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Work email <span style="color:var(--red)">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jane@company.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="company">Company <span style="color:var(--red)">*</span></label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Acme Energy"
+                  required
+                  autocomplete="organization"
+                />
+              </div>
+              <div class="form-group">
+                <label for="role">Role</label>
+                <input
+                  type="text"
+                  id="role"
+                  name="role"
+                  placeholder="Head of Trading Risk"
+                  autocomplete="organization-title"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="interest">Area of interest</label>
+              <select id="interest" name="interest">
+                <option value="" disabled selected>Select an area…</option>
+                <option value="Trading decision support">Trading decision support</option>
+                <option value="Market risk">Market risk</option>
+                <option value="Credit risk">Credit risk</option>
+                <option value="Research and analytics">Research and analytics</option>
+                <option value="Workflow automation">Workflow automation</option>
+                <option value="Platform overview">Platform overview</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us about your team, workflows, and what you're exploring…"
+              ></textarea>
+            </div>
+
+            <!-- Honeypot spam field — hidden from humans -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:4px;">
+              Send message
+            </button>
+
+            <p class="form-note">We respect your privacy and will never share your information.</p>
+          </form>
+
+          <!-- Success state -->
+          <div id="formSuccess" class="form-success">
+            <div style="font-size: 3rem; margin-bottom: 16px;">✅</div>
+            <h3 style="color: var(--green); margin-bottom: 8px;">Message sent!</h3>
+            <p style="color: var(--slate);">Thanks for reaching out. We'll be in touch shortly.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to explore Bitforge?</h2>
+      <p>Start the conversation and see how agentic AI can support faster decisions and more scalable execution across your trading organization.</p>
+      <a href="#contactForm" class="btn btn-gold btn-lg" onclick="document.getElementById('name').focus(); return false;">Book a Demo</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/bitforgelogo.png" alt="Bitforge" />
+          <p>Agentic AI for energy trading. Secure, adaptive AI agents for trading, market risk, credit risk, and enterprise workflow execution.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Bitforge. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
