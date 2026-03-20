@@ -10,6 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Azure Application Insights -->
+  <script type="text/javascript">
+  !(function(cfg){function e(){cfg.onInit&&cfg.onInit(n)}var x,w,D,t,E,d,I=window,v=document,T="script",u="ingestionendpoint",c="disableExceptionTracking",f=cfg.src||"https://js.monitor.azure.com/scripts/b/ai.2.min.js";if(I.skipAIData=!0,!cfg.name){var a=I.appInsights||I.applicationInsights;if(a)return a}window[(cfg.name="appInsightsSDK")]="appInsights";var n=window[window.appInsightsSDK]||{};if(n&&!n.initialize){var p=n.config||{};p.connectionString=cfg.connectionString||p.connectionString}(!n||!n.initialize)&&(n={cfg:cfg,queue:[],sv:"6",version:2,config:cfg.cfg,initialize:!0,_onerror:[],fn:n.fn||{},onInit:null,onAfterInit:null},d=v.createElement(T),x=v.getElementsByTagName(T),d.async=1,d.src=f,x[0].parentNode.insertBefore(d,x[0]),n._track=function(e){n.queue.push(e)},window.appInsights=n,n.queue=[]),[" Event","Metric","DependencyData","PageView","Exception","Trace"].forEach(function(e){n["track"+e]=function(){n.queue.push([e,arguments])}}),["flush","addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext"].forEach(function(e){n[e]=function(){n.queue.push([e,arguments])}}),e()}({
+    connectionString:"InstrumentationKey=758a205a-1f6e-4ffa-86d2-5860e098ecbf;IngestionEndpoint=https://eastus2-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus2.livediagnostics.monitor.azure.com/;ApplicationId=5a18a78f-4966-4bd2-a1e3-d0a86cf0fdaa"
+  }));
+  </script>
 </head>
 <body>
 
@@ -24,6 +30,8 @@
         <li><a href="platform.html">Platform</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
       </ul>
       <a href="contact.html" class="btn btn-gold nav-cta">Book a Demo</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -35,6 +43,8 @@
       <a href="platform.html">Platform</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
       <a href="contact.html" class="btn btn-gold">Book a Demo</a>
     </div>
   </nav>
@@ -161,6 +171,8 @@
           <a href="platform.html">Platform</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
         </nav>
       </div>
       <div class="footer-bottom">
