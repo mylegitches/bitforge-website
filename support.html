@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Support — Bitforge</title>
+  <meta name="description" content="Bitforge customer support — contact us for questions about active engagements, deliverables, or general inquiries." />
+  <link rel="icon" type="image/png" href="assets/bitforgelogo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Azure Application Insights -->
+  <script type="text/javascript">
+  !(function(cfg){function e(){cfg.onInit&&cfg.onInit(n)}var x,w,D,t,E,d,I=window,v=document,T="script",u="ingestionendpoint",c="disableExceptionTracking",f=cfg.src||"https://js.monitor.azure.com/scripts/b/ai.2.min.js";if(I.skipAIData=!0,!cfg.name){var a=I.appInsights||I.applicationInsights;if(a)return a}window[(cfg.name="appInsightsSDK")]="appInsights";var n=window[window.appInsightsSDK]||{};if(n&&!n.initialize){var p=n.config||{};p.connectionString=cfg.connectionString||p.connectionString}(!n||!n.initialize)&&(n={cfg:cfg,queue:[],sv:"6",version:2,config:cfg.cfg,initialize:!0,_onerror:[],fn:n.fn||{},onInit:null,onAfterInit:null},d=v.createElement(T),x=v.getElementsByTagName(T),d.async=1,d.src=f,x[0].parentNode.insertBefore(d,x[0]),n._track=function(e){n.queue.push(e)},window.appInsights=n,n.queue=[]),[" Event","Metric","DependencyData","PageView","Exception","Trace"].forEach(function(e){n["track"+e]=function(){n.queue.push([e,arguments])}}),["flush","addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext"].forEach(function(e){n[e]=function(){n.queue.push([e,arguments])}}),e()}({
+    connectionString:"InstrumentationKey=758a205a-1f6e-4ffa-86d2-5860e098ecbf;IngestionEndpoint=https://eastus2-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus2.livediagnostics.monitor.azure.com/;ApplicationId=5a18a78f-4966-4bd2-a1e3-d0a86cf0fdaa"
+  }));
+  </script>
+  <style>
+    .support-contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 32px 0;
+    }
+    .support-contact-card {
+      background: var(--bg-card, #1a2236);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 28px 32px;
+    }
+    .support-contact-card .contact-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .support-contact-card a {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .support-contact-card a:hover { color: var(--gold); }
+    .support-contact-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .support-checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .support-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .support-checklist li:last-child { border-bottom: none; }
+    .support-checklist li::before {
+      content: "→";
+      color: var(--gold);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .response-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    .response-table th {
+      text-align: left;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.05);
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .response-table td {
+      padding: 14px 16px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .response-table tr:last-child td { border-bottom: none; }
+    .response-table td:first-child { color: var(--white); font-weight: 500; }
+    .support-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .support-contact-grid { grid-template-columns: 1fr; }
+      .support-two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Bitforge home">
+        <img src="assets/bitforgelogo.png" alt="Bitforge logo" />
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold nav-cta">Book a Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Home</a>
+      <a href="platform.html">Platform</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html" class="btn btn-gold">Book a Demo</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero hero-sm">
+    <div class="container">
+      <div class="hero-eyebrow">Customer Support</div>
+      <h1>We're here to <span class="accent">help</span></h1>
+      <p class="hero-sub">
+        Whether you have a question about an active engagement, need to report an issue, or want to follow up on a deliverable, our support team is ready to assist.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT INFO ===== -->
+  <section class="section-dark">
+    <div class="container">
+      <span class="section-label" style="color: var(--gold);">Reach out directly</span>
+      <h2 style="color: var(--white); margin-bottom: 8px;">Contact our support team</h2>
+      <p style="color: var(--muted); margin-bottom: 0;">Reach out using the information below and we'll respond as quickly as possible.</p>
+
+      <div class="support-contact-grid">
+        <div class="support-contact-card">
+          <div class="contact-label">Email support</div>
+          <a href="mailto:ross.friedman@bitforgeagi.com">ross.friedman@bitforgeagi.com</a>
+          <p>Best for non-urgent questions and detailed requests.</p>
+        </div>
+        <div class="support-contact-card">
+          <div class="contact-label">Phone</div>
+          <a href="tel:7138259382">713-825-9382</a>
+          <p>Best for urgent or production-impacting issues — call directly for the fastest response.</p>
+        </div>
+      </div>
+
+      <div class="support-two-col" style="margin-top: 48px;">
+
+        <div>
+          <h3 style="color: var(--white); margin-bottom: 20px;">What to include in your message</h3>
+          <p style="color: var(--muted); margin-bottom: 20px;">To help us resolve your request as quickly as possible, please include:</p>
+          <ul class="support-checklist">
+            <li>Your company name and the name of your primary Bitforge contact, if known</li>
+            <li>A clear description of the issue or question</li>
+            <li>Any relevant deliverable name, system, or engagement reference</li>
+            <li>Screenshots or error messages, if applicable</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 style="color: var(--white); margin-bottom: 20px;">Response times</h3>
+          <table class="response-table">
+            <thead>
+              <tr>
+                <th>Request type</th>
+                <th>Typical response</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>General inquiries</td>
+                <td>Within 1 business day</td>
+              </tr>
+              <tr>
+                <td>Active engagement support</td>
+                <td>Within 4 business hours</td>
+              </tr>
+              <tr>
+                <td>Urgent / production-impacting</td>
+                <td>As soon as possible — call directly for fastest response</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ADDITIONAL SECTIONS ===== -->
+  <section class="section-light">
+    <div class="container">
+      <div class="card-grid card-grid-2">
+
+        <div class="card">
+          <h3>For active engagements</h3>
+          <p>If you are a current client with an active Statement of Work, your assigned Bitforge Delivery Lead remains your primary point of contact for day-to-day questions. The contact information above is available as an additional channel for general support, billing questions, or if you are unable to reach your assigned contact.</p>
+        </div>
+
+        <div class="card">
+          <h3>Security concerns</h3>
+          <p>If you believe you have discovered a security vulnerability or data issue related to Bitforge's work, please contact us immediately using the information above and mark your message as urgent. We take all security reports seriously and will respond on an expedited basis.</p>
+          <p style="margin-top: 16px;">To report an ethics, compliance, harassment, or other concern anonymously, use our <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7yWgfghMKbQncNgukO5Jzz2a5Y7KTtdHu5jOmqCVvJTIIJA/viewform" target="_blank" rel="noopener noreferrer" style="color: var(--gold); font-weight: 600;">Confidential Reporting Form</a>. This form does not collect your name or email address.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Not yet a client?</h2>
+      <p>If you're exploring Bitforge for the first time, the best place to start is our demo request form.</p>
+      <a href="contact.html" class="btn btn-gold btn-lg">Book a Demo</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/bitforgelogo.png" alt="Bitforge" />
+          <p>Agentic AI for energy trading. Secure, adaptive AI agents for trading, market risk, credit risk, and enterprise workflow execution.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Bitforge. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
